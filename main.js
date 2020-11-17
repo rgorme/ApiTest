@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const host = "0.0.0.0";
+const host = "192.168.5.12";
 const port = 3033;
 
 app.get('/', (req, res) => {
