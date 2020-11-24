@@ -1,10 +1,23 @@
 const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = express();
+
 const host = "192.168.5.12";
 const port = 3033;
 
-app.get('/', (req, res) => {
-    res.send('Hello World! I am here')
+let books = [];
+
+app.use(cors());
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.post('/book', (req, res) => {
+    const book = req.body;
+
+    console.log(book);
+    books.push(book);
 });
 
 app.listen(port, host, () => {
