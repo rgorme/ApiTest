@@ -3,7 +3,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 
-const host = "192.168.5.12";
 const port = 3033;
 
 let books = [];
@@ -20,6 +19,6 @@ app.post('/book', (req, res) => {
     books.push(book);
 });
 
-app.listen(port, host, () => {
+app.listen(port, () => {
     console.log(`Server now listening on port http://${host}:${port}`)
 });
