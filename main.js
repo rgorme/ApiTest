@@ -20,5 +20,5 @@ app.post('/book', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server now listening on port http://${host}:${port}`)
+    console.log(`Server now listening on port http://0.0.0.0:${port}`)
 });
