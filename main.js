@@ -19,6 +19,10 @@ app.post('/book', (req, res) => {
     books.push(book);
 });
 
+app.get('/book', (req, res) {
+    console.log("Hit Book!");
+});
+
 app.listen(port, () => {
     console.log(`Server now listening on port http://0.0.0.0:${port}`)
 });
