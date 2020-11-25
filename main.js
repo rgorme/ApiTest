@@ -19,7 +19,7 @@ app.post('/book', (req, res) => {
     books.push(book);
 });
 
-app.get('/book', (req, res) {
+app.get('/book', (req, res) => {
     console.log("Hit Book!");
 });
 
