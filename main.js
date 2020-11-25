@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const { response } = require('express');
 const app = express();
 
 const port = 3033;
@@ -21,6 +22,7 @@ app.post('/book', (req, res) => {
 
 app.get('/book', (req, res) => {
     console.log("Hit Book!");
+    res.send("Hit book!");
 });
 
 app.listen(port, () => {
