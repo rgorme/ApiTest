@@ -43,7 +43,7 @@ CREATE TABLE LOG
 (
     LOG_ID              INT                     PRIMARY KEY IDENTITY(-1000000,1),
     LOG_TYPE            VARCHAR(100)            NOT NULL,
-    LOG_TIME            TIMESTAMP               NOT NULL,
+    LOG_TIME            DATETIME                NOT NULL DEFAULT CURRENT_TIMESTAMP,
     LOG_TEXT            VARCHAR(MAX)            NOT NULL,
     LOG_SEVERITY        VARCHAR(100)            NOT NULL
 );
