@@ -1,5 +1,5 @@
 var response = require('../../shared/response');
-var TYPES = require('tedious').TYPES;
+var TYPES = require('../../database/node_modules/tedious').TYPES;
 
 function AuthorRepository(dbContext) {
     function getAuthors(req, res) {
