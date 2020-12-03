@@ -6,8 +6,6 @@ module.exports = function (router) {
         .get(authorRepository.getAll)
         .post(authorRepository.post);
 
-    router.route('/authors/department')
-        .get(authorRepository.getMulti);
     router.use('/authors/:authorId', authorRepository.intercept);
     router.route('/authors/:authorId')
         .get(authorRepository.get)
