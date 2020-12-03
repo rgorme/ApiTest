@@ -19,6 +19,8 @@ function AuthorRepository(dbContext) {
                 }
                 return res.sendStatus(404);
             });
+        } else {
+            return res.sendStatus(500);
         }
     }
     function postAuthors(req, res) {
