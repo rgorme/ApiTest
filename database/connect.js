@@ -13,7 +13,7 @@ var config = {
         database: 'LIBRARY',
         rowCollectionOnDone: true,
         useColumnNames: false,
-        encrypted: false,
+        encrypt: false,
     }
 }
 
