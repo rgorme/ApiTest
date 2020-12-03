@@ -44,7 +44,7 @@ BEGIN
                 ,   I.NATIONALITY_SHORT
                 ,   I.DESCRIPTION
     FROM            INSERTED AS I
-    UNION ALL
+    UNION
     SELECT          @operation      AS AUDIT_OPERATION
                 ,   'OLD'           AS AUDIT_ROW_TYPE
                 ,   @audit_session  AS AUDIT_SESSION
