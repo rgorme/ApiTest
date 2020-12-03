@@ -1,5 +1,5 @@
 const _authorRepository = require('./author.repository');
-const dbContext = require('../../Database/dbContext');
+const dbContext = require('../../database/dbContext');
 module.exports = function (router) {
     const authorRepository = _authorRepository(dbContext);
     router.route('/authors')
