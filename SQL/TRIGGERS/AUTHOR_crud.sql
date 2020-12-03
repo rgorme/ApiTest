@@ -48,10 +48,10 @@ BEGIN
     SELECT          @operation      AS AUDIT_OPERATION
                 ,   'OLD'           AS AUDIT_ROW_TYPE
                 ,   @audit_session  AS AUDIT_SESSION
-                ,   I.AUTHOR_ID
-                ,   I.FIRST_NAME
-                ,   I.LAST_NAME
-                ,   I.NATIONALITY_SHORT
-                ,   I.DESCRIPTION
-    FROM            INSERTED AS I
+                ,   D.AUTHOR_ID
+                ,   D.FIRST_NAME
+                ,   D.LAST_NAME
+                ,   D.NATIONALITY_SHORT
+                ,   D.DESCRIPTION
+    FROM            DELETED AS D
 END
