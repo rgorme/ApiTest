@@ -7,7 +7,7 @@
 -- Create date: 02-12-2020
 -- Description:	Oprettelse af ny forfatter
 -- =============================================
-CREATE OR ALTER PROCEDURE proc_InsertOrUpdateAuthor
+CREATE OR ALTER PROCEDURE dbo.proc_InsertOrUpdateAuthor
 	@FIRST_NAME	VARCHAR(250),
 	@LAST_NAME VARCHAR(250),
 	@NATIONALITY_SHORT VARCHAR(5) = NULL,
