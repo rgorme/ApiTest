@@ -6,9 +6,9 @@ module.exports = function (router) {
         .get(authorRepository.getAll)
         .post(authorRepository.post);
 
-    router.use('/authors/:authorId', authorRepository.intercept);
-    router.route('/authors/:authorId')
-        .get(authorRepository.get)
-        .put(authorRepository.put)
-        .delete(authorRepository.delete);
+    // router.use('/authors/:authorId', authorRepository.intercept);
+    // router.route('/authors/:authorId')
+    //     .get(authorRepository.get)
+    //     .put(authorRepository.put)
+    //     .delete(authorRepository.delete);
 }
