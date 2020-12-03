@@ -2,7 +2,7 @@ const _authorRepository = require('./author.repository');
 const dbContext = require('../../database/dbContext');
 module.exports = function (router) {
     const authorRepository = _authorRepository(dbContext);
-    router.route('/authors')
+    router.route('/author')
         .get(authorRepository.getAll)
         .post(authorRepository.post);
 
