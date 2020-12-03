@@ -12,7 +12,8 @@ var config = {
     options: {
         database: 'LIBRARY',
         rowCollectionOnDone: true,
-        useColumnNames: false
+        useColumnNames: false,
+        encrypted: false,
     }
 }
 
