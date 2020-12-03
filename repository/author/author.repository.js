@@ -3,7 +3,7 @@ var TYPES = require('tedious').TYPES;
 
 function AuthorRepository(dbContext) {
     function getAuthors(req, res) {
-        dbContext.get("getAuthor", function (error, data) {
+        dbContext.get("exec getAuthor", function (error, data) {
             return res.json(response(data, error));
         });
     }
